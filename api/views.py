@@ -11,7 +11,7 @@ from django.views.generic import View
 def getRoutes(request):
     routes = [
         {'GET': '/api/games'},
-        {'GET': '/api/user-info'},
+        {'GET, POST': '/api/user-info'},
     ]
 
     return Response(routes)
